@@ -1,0 +1,35 @@
+.header {
+  margin-top: 50px;
+  &__row {
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    padding-right: 87px;
+  }
+  &__list {
+    margin-bottom: 0;
+  }
+  &__item {
+    display: inline;
+    &:last-child {
+      .header__link {
+        padding-right: 0;
+      }
+    }
+  }
+  &__link {
+    color: $main-color;
+    font-size: 18.5px;
+    padding-right: 33px;
+    transition: all .3s;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      color: darken($green-color, 35%);
+    }
+    &:link, &:focus {
+      color: $main-color;
+    }
+  }
+}

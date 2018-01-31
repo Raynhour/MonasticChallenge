@@ -1,0 +1,60 @@
+@import "variables-functions-and-mixins";
+
+::selection { background: rgba($green-color, .5); }
+* { font-family: $main-font, Serif; }
+.container-fluid {max-width: 1170px;}
+.align-right { text-align: right; }
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.body { background: #fff; }
+
+.row-flex {
+  display:flex;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  padding-left: 0;
+  &_inline {
+    list-style-type: none;
+  }
+  &__item {
+    &_main {
+      font-size: 18px;
+    }
+  }
+}
+
+.button {
+  outline: none;
+  &_main {
+    background: transparent;
+    border: 2px solid $main-color;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: $main-color;
+    transition: all .3s;
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;  
+    }
+  }
+}
+
+.section {
+  &__title {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 86px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+}
+
+@import 'media';
+@import "fonts";

@@ -1,0 +1,48 @@
+section.contacts.section#contacts
+  img(src='../../img/bg-top-2.png').news__wave.news__wave-top
+  .container-fluid
+    .row
+      .col-md-12
+        h2.contacts__title контактная информация
+        .row-flex.contacts__header
+          .contacts__header-box
+            p.contacts__header-title киев
+            p.contacts__header-text.contacts__header-text_semi 1-2 февраля 2018
+            p.contacts__header-title.mb-10 отель национальный
+            p.contacts__header-text Ул. Липская 5, 3 этаж
+            p.contacts__header-text.contacts__header-text_bot Начало 11:00
+            p.contacts__header-title.mt-30 02.02.2018 Тренинг
+            p.contacts__header-text 2500 &#8372;
+            p.contacts__header-title 03.02.2018 Игра
+            p.contacts__header-text 1500 &#8372;
+            p.contacts__header-title Тренинг + Игра
+            p.contacts__header-text 3500 &#8372;
+          .contacts__header-box
+            p.contacts__header-title РИГА
+            p.contacts__header-text.contacts__header-text_semi 9-10 февраля 2018
+            p.contacts__header-title.mb-10 raddison blu
+            p.contacts__header-title Daugava Hotel
+             p.contacts__header-text 24 Kugu str., Riga, 
+            p.contacts__header-text Latvia, LV-1048
+            p.contacts__header-text.contacts__header-text_bot.mt-20 Начало 11:00
+            p.contacts__header-title.mt-30 09.02.2018 Тренинг
+            p.contacts__header-text 70 &euro;
+            p.contacts__header-title 10.02.2018 Игра
+            p.contacts__header-text 50 &euro;
+            p.contacts__header-title Тренинг + Игра
+            p.contacts__header-text 100 &euro;
+            
+
+    .row
+      .col-md-12
+        h2.contacts__title.contacts__title_bot записаться на тренинг
+        form(action='./mailto.php' method='POST')#form.form
+          .form__wrap
+            input(type='email' required name='email' placeholder='email').form__field
+            input(type='text' required name='name' placeholder='имя').form__field
+            input(type='number' required name='phone' placeholder='тел').form__field
+            select(name='city' required).form__field
+              option KИЕВ 
+              option РИГА
+          button(type='submit').button.button_main.mt-40 ОСТАВИТЬ ЗАЯВКУ
+        a(href='https://docs.google.com/forms/d/e/1FAIpQLSf1qIydxHLIkRQK-nbknchZg3b5ZKiO13Wy3Bd_xwFejCK1Kg/viewform').contacts__link Регистрация на Google Form

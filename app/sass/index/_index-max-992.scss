@@ -1,0 +1,39 @@
+.header {
+  &__logo {
+    padding-right: 0;
+  }
+  &__link {
+    padding-right: 20px;
+  }
+  &__list {
+    text-align: center;
+  }
+}
+
+.banner {
+  &__body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__header {
+    flex-wrap: wrap;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__title {
+    font-size: 60px;
+  }
+  &__main {
+    padding: 0;
+  }
+}
+
+.speaker {
+  &__avatar {
+    width: 200px;
+    height: 200px;
+    position: unset;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "index/index";
+@import "index/header";
+
+@media (max-width: 1200px) {
+    @import "index/index-max-1200";
+}
+
+@media (max-width: 991px) {
+    @import "index/index-max-992";
+}
+
+@media (max-width: 767px) {
+    @import "index/index-max-767";
+}
+
+@media (max-width: 400px) {
+    .banner__title {
+        font-size: 30px;
+    }
+}

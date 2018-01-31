@@ -1,0 +1,63 @@
+.header {
+  &__logo {
+    padding-right: 0;
+  }
+  &__link {
+    padding-right: 0;
+    display: block;
+    font-size: 10.5px;
+  }
+}
+
+.banner {
+  &__body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__title {
+    font-size: 30px;
+  }
+  &__main {
+    padding: 0;
+  }
+}
+
+.speaker {
+  &__avatar {
+    width: 200px;
+    height: 200px;
+    position: unset;
+    margin-top: 20px;
+  }
+}
+
+.contacts {
+  &__title {
+    font-size: 30px;
+  }
+  &__header {
+    flex-wrap: wrap;
+    &-box {
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+      
+    }
+  }
+}
+
+.form {
+  &__wrap {
+    flex-wrap: wrap;
+  }
+  &__field {
+    margin-top: 10px;
+  }
+}
